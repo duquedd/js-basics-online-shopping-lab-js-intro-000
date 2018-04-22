@@ -25,8 +25,8 @@ function viewCart() {
         string = string + `and ${item[i][`itemName`]} at $${item[i][`itemPrice`]}.`
       }else {sting = string + `${item[i][`itemName`]} at $${item[i][`itemPrice`]},`}
     }
-  }
-  return string
+    return string
+  }else {return `Your shopping cart is empty.`}
 }
 
 function total() {
