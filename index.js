@@ -42,7 +42,8 @@ function removeFromCart(item) {
 
   for(var i=0; i< cart.length; i++){
     if (cart[i]['itemName']===item){
-      delete cart[i]
+      delete cart[i][`itemName`]
+      delete cart[i][`itemPrice`]
       return cart
     }else{ return `That item is not in your cart.`}
   }
