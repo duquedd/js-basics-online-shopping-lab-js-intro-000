@@ -13,6 +13,7 @@ function addToCart(item) {
   var obj ={}
   obj[`itemName`]= item
   obj[`itemPrice`]= Math.floor(Math.random()*100)
+  cart[cart.length]=obj
   return `${item} has been added to your cart.`
 }
 
