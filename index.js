@@ -18,7 +18,14 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  var string = "In your cart, you have"
+  if (cart.length !== 0){
+    for (var i=0;i < cart.length; i++ ){
+      if (i === cart.length-1){
+        string = string + `and ${item[i][`itemName`]} at $${item[i][`itemPrice`]}.`
+      }else {sting = string + `${item[i][`itemName`]} at $${item[i][`itemPrice`]},`}
+    }
+  }
 }
 
 function total() {
