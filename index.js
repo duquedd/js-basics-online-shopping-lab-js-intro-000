@@ -44,10 +44,11 @@ function removeFromCart(item) {
     if (cart[i]['itemName']===item){
       flag = 1
       delete cart[i]
-      return cart
     }
   } if (flag === 0){
     return 'That item is not in your cart.'
+  } if (flag === 1){
+    return cart
   }
 }
 
