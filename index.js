@@ -26,6 +26,7 @@ function viewCart() {
       }else {sting = string + `${item[i][`itemName`]} at $${item[i][`itemPrice`]},`}
     }
   }
+  return string
 }
 
 function total() {
