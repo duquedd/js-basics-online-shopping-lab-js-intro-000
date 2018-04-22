@@ -43,8 +43,7 @@ function removeFromCart(item) {
   for(var i=0; i< cart.length; i++){
     if (cart[i]['itemName']===item){
       flag = 1
-      delete cart[i][`itemName`]
-      delete cart[i][`itemPrice`]
+      delete cart[i]
       return cart
     }
   } if (flag === 0){
