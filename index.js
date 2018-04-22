@@ -22,8 +22,8 @@ function viewCart() {
   if (cart.length !== 0){
     for (var i=0;i < cart.length; i++ ){
       if (i === cart.length-1){
-        string = string + `and ${item[i][`itemName`]} at $${item[i][`itemPrice`]}.`
-      }else {sting = string + `${item[i][`itemName`]} at $${item[i][`itemPrice`]},`}
+        string = string + `and ${cart[i][`itemName`]} at $${cart[i][`itemPrice`]}.`
+      }else {sting = string + `${cart[i][`itemName`]} at $${cart[i][`itemPrice`]},`}
     }
     return string
   }else {return `Your shopping cart is empty.`}
