@@ -39,13 +39,14 @@ function total() {
 }
 
 function removeFromCart(item) {
-
+  var flag=0
   for(var i=0; i< cart.length; i++){
-    if (cart[i]['itemName']==item){
+    if (cart[i]['itemName']===item){
+      flag = 1
       delete cart[i][`itemName`]
       delete cart[i][`itemPrice`]
       return cart
-    }else{ return `That item is not in your cart.`}
+    }if (flag ===0){ return `That item is not in your cart.`}
   }
 }
 
