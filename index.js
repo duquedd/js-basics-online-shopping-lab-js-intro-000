@@ -46,7 +46,9 @@ function removeFromCart(item) {
       delete cart[i][`itemName`]
       delete cart[i][`itemPrice`]
       return cart
-    }if (flag ===0){ return `That item is not in your cart.`}
+    }
+  } if (flag === 0){
+    return 'That item is not in your cart.'
   }
 }
 
